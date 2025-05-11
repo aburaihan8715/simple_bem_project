@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple BEM project</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <header class="header">
+        <div class="header__logo">
+          <a class="header__logo-link" href="#">
+            <img class="header__logo-image" src="img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">about</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">service</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">gallery</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <!-- hero -->
+        <div class="banner">
+          <img src="img/bannar.jpg" alt="banner" class="banner__image" />
+        </div>
+
+        <!-- service -->
+        <section class="service">
+          <h2 class="service__title">exclusive services</h2>
+          <div class="service__wrapper">
+            <div class="service__single">
+              <h5 class="service__title-2">service title</h5>
+
+              <img
+                src="img/service1.jpg"
+                alt="service image"
+                class="service__image"
+              />
+              <p class="service__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores, deleniti aliquam! A, aliquam animi soluta modi hic
+                aspernatur praesentium iste.
+              </p>
+
+              <a class="btn" href="#">read more</a>
+            </div>
+            <div class="service__single">
+              <h5 class="service__title-2">service title</h5>
+
+              <img
+                src="img/service2.jpg"
+                alt="service image"
+                class="service__image"
+              />
+              <p class="service__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores, deleniti aliquam! A, aliquam animi soluta modi hic
+                aspernatur praesentium iste.
+              </p>
+
+              <a class="btn" href="#">read more</a>
+            </div>
+            <div class="service__single">
+              <h5 class="service__title-2">service title</h5>
+
+              <img
+                src="img/service3.jpg"
+                alt="service image"
+                class="service__image"
+              />
+              <p class="service__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores, deleniti aliquam! A, aliquam animi soluta modi hic
+                aspernatur praesentium iste.
+              </p>
+
+              <a class="btn" href="#">read more</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- about -->
+        <section class="about">
+          <div class="about__content">
+            <h5 class="about__title">about us</h5>
+            <p class="about__description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+              tenetur molestias laboriosam libero tempore odio illo, molestiae,
+              sequi delectus velit fugiat minus officiis! Dignissimos, earum.
+            </p>
+
+            <p class="about__description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+              tenetur molestias laboriosam libero tempore odio illo, molestiae,
+              sequi delectus velit fugiat minus officiis! Dignissimos, earum.
+            </p>
+
+            <a class="btn" href="#">read more</a>
+          </div>
+
+          <div class="about__menu">
+            <h5 class="about__title-2">sidebar menu</h5>
+
+            <ul class="about__menu-list">
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link">Home</a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link">about</a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link">service</a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link">galley</a>
+              </li>
+              <li class="about__menu-item">
+                <a href="#" class="about__menu-link">contact</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- contact -->
+        <section class="contact">
+          <div class="contact__form">
+            <h4 class="contact__title">get in touch</h4>
+            <form>
+              <input
+                class="contact__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter name"
+              />
+              <input
+                class="contact__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email"
+              />
+
+              <textarea
+                class="contact__message"
+                name="message"
+                id="message"
+                placeholder="Enter message"
+              ></textarea>
+
+              <input class="contact__submit" type="submit" value="SEND" />
+            </form>
+          </div>
+          <div class="contact__address">
+            <h4 class="contact__title-2">our address</h4>
+            <ul class="contact__list">
+              <li class="contact__list-item">Address: Sydney, Australia</li>
+              <li class="contact__list-item">Email: info@simple.com</li>
+              <li class="contact__list-item">Phone: 11223344</li>
+              <li class="contact__list-item">Web: www.simple.com</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="map">
+          <iframe
+            class="map__iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115860.63361522548!2d89.28783459512097!3d24.84181794709168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fc54e7e81df441%3A0x27133ed921fe73f4!2z4Kas4KaX4KeB4Kah4Ka84Ka-!5e0!3m2!1sbn!2sbd!4v1746940095512!5m2!1sbn!2sbd"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </main>
+      <footer class="footer">
+        <p class="footer__text">&copy; 2025 All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
