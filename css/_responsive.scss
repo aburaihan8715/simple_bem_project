@@ -1,0 +1,121 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+
+  // service
+  .service {
+    &__single {
+      flex-basis: 31.33%;
+    }
+  }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 740px;
+  }
+  .header {
+    flex-direction: column;
+  }
+
+  // service
+  .service {
+    &__title-2 {
+      font-size: 30px;
+    }
+  }
+
+  // about
+  .about {
+    &__title,
+    &__title-2 {
+      font-size: 30px;
+    }
+  }
+
+  // contact
+
+  .contact {
+    &__form {
+      flex-basis: 60%;
+    }
+    &__address {
+      flex-basis: 36%;
+    }
+    &__title-2 {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+  }
+
+  .header {
+    padding: 10px 10px;
+    &__logo {
+      flex-basis: 100%;
+    }
+    &__logo-link {
+      justify-content: center;
+    }
+    &__menu {
+      flex-basis: 100%;
+    }
+
+    &__menu-list {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  // service
+  .service {
+    &__title {
+      font-size: 30px;
+    }
+    &__single {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  // about
+  .about {
+    &__content {
+      flex-basis: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__menu {
+      flex-basis: 100%;
+    }
+  }
+
+  // contact
+
+  .contact {
+    &__form {
+      flex-basis: 100%;
+      margin-bottom: 50px;
+    }
+    &__address {
+      flex-basis: 100%;
+    }
+  }
+}
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 450px;
+  }
+}
+
+/* ========end========= */
